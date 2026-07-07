@@ -1,0 +1,20 @@
+public class _01_Find_Largest_Element{
+
+    public static int largestElement(int arr[]){
+        int largest=Integer.MIN_VALUE;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (largest<arr[i]) {
+                largest=arr[i];
+            }
+        }
+
+        return largest;
+    }
+
+    public static void main(String[] args){
+        int arr[]={8,3,5,9,7,2,4};
+
+        System.out.println(largestElement(arr));
+    }
+}
